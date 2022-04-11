@@ -1,3 +1,4 @@
+/* codigo para aumentar o disminuir, manipulando el estado likes
 import React, { useState } from "react";
 
 const Counter = () => {
@@ -11,10 +12,13 @@ const Counter = () => {
 	);
 };
 export default Counter;
-
-/* codigo para mostrar el valor de los segundos del reloj
-let Counter = (props) => {
-	return <div>{props.seconds}</div>;
-};
-export default Counter;
 */
+
+/* codigo para mostrar el valor de los segundos del reloj*/
+
+import React from "react";
+let Counter = (props) => {
+	return <div class="clockcounter">{props.seconds}</div>;
+};
+
+export default Counter;

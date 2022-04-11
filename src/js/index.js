@@ -10,16 +10,35 @@ import Counter from "./component/Counter.jsx";
 
 //render your react application
 
+/* codigo para mostrar counter likes renderizar 
 ReactDOM.render(<Counter />, document.querySelector("#app"));
+*/
+/* codigo para mostrar el valor de los segundos del reloj (contador sin estado)*/
 
-/* codigo para mostrar el valor de los segundos del reloj (contador sin estado)
 var seconds = 0;
+var segundos = 0;
 function renderClock() {
+	var minutes = Math.floor(seconds / 60);
+	var hours = Math.floor(seconds / 3600);
+	var days = Math.floor(seconds / 86400);
+	if (segundos == 60) {
+		segundos = 0;
+	} else {
+		segundos = segundos + 1;
+	}
+
 	ReactDOM.render(
-		<Counter seconds={seconds} />,
+		<div class="bigcounter">
+			<div>
+				<i class="far fa-clock"></i>
+			</div>
+			<Counter seconds={days} />
+			<Counter seconds={hours} class="clockcounter" />
+			<Counter seconds={minutes} class="clockcounter" />
+			<Counter seconds={segundos} class="clockcounter" />
+		</div>,
 		document.querySelector("#app")
 	);
 	seconds++;
 }
 setInterval(renderClock, 1000);
-*/
