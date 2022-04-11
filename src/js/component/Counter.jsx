@@ -18,7 +18,7 @@ export default Counter;
 
 import React from "react";
 let Counter = (props) => {
-	return <div class="clockcounter">{props.seconds}</div>;
+	return <div class="clockcounter">{props.valor}</div>;
 };
 
 export default Counter;

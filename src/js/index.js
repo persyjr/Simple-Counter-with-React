@@ -32,10 +32,10 @@ function renderClock() {
 			<div>
 				<i class="far fa-clock"></i>
 			</div>
-			<Counter seconds={days} />
-			<Counter seconds={hours} class="clockcounter" />
-			<Counter seconds={minutes} class="clockcounter" />
-			<Counter seconds={segundos} class="clockcounter" />
+			<Counter valor={days} />
+			<Counter valor={hours} class="clockcounter" />
+			<Counter valor={minutes} class="clockcounter" />
+			<Counter valor={segundos} class="clockcounter" />
 		</div>,
 		document.querySelector("#app")
 	);

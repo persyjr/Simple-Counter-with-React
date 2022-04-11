@@ -21,7 +21,7 @@
 }
 .clockcounter{
     display:flex;
-    align-content: center;
+    justify-content: center;
     background: #272626ec;
     width:60px;
     height: 100px;
