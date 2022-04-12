@@ -7,6 +7,7 @@ import "../styles/index.css";
 
 //import your own components
 import Counter from "./component/Counter.jsx";
+import Button from "./component/Button.jsx";
 
 //render your react application
 
@@ -17,6 +18,7 @@ ReactDOM.render(<Counter />, document.querySelector("#app"));
 
 var seconds = 0;
 var segundos = 0;
+
 function renderClock() {
 	var minutes = Math.floor(seconds / 60);
 	var hours = Math.floor(seconds / 3600);
@@ -36,6 +38,7 @@ function renderClock() {
 			<Counter valor={hours} class="clockcounter" />
 			<Counter valor={minutes} class="clockcounter" />
 			<Counter valor={segundos} class="clockcounter" />
+			<Button />
 		</div>,
 		document.querySelector("#app")
 	);
